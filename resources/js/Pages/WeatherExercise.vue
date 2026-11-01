@@ -24,7 +24,7 @@
                         Get Weather
                     </button>
                     <div
-                        class="min-h-40 rounded-lg border border-slate-200 bg-white p-6 shadow-sm sm:min-h-20"
+                        class="min-h-40 rounded-lg border border-slate-200 p-6 shadow-sm sm:min-h-20"
                         aria-live="polite"
                     ></div>
                 </section>
