@@ -1,0 +1,32 @@
+{
+    "name": "hiring/weather-exercise",
+    "type": "project",
+    "description": "A small Laravel and Vue weather exercise",
+    "keywords": ["laravel", "vue", "weather"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "inertiajs/inertia-laravel": "^0.6.3",
+        "laravel/framework": "^10.0",
+        "tightenco/ziggy": "^1.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
