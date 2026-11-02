@@ -17,7 +17,7 @@ Run `npm run dev` and `php artisan serve` in separate terminals, then open `http
 
 ## Candidate task
 
-In 15 minutes, connect the button to the server endpoint, show the current temperature and a readable weather condition in the empty panel, and change the panel background based on the condition. Keep the result readable on mobile.
+Connect the button to the server endpoint, show the current temperature in the empty panel, and change the panel background based on the temperature. Keep the result readable on mobile.
 
 Use [Open-Meteo's free forecast API](https://open-meteo.com/en/docs) with no API key. For Boston, use latitude `42.3601` and longitude `-71.0589`. Request current temperature and weather code using:
 
@@ -25,4 +25,4 @@ Use [Open-Meteo's free forecast API](https://open-meteo.com/en/docs) with no API
 https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589&current=temperature_2m,weather_code&temperature_unit=fahrenheit
 ```
 
-The finished flow should have the browser request weather from `GET /api/weather`, the Laravel action call Open-Meteo and return a small JSON response, and Vue render the temperature, condition, and condition-based panel color.
+The finished flow should have the browser request weather from `GET /api/weather`, the Laravel action call Open-Meteo and return a small JSON response, and Vue render the temperature, and temperature-based panel color.
